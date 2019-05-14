@@ -10,12 +10,12 @@ Make sure you read this - http://felenasoft.com/xeoma/en/eula/ as you are effect
 ### Getting the Docker
 From Docker Index
 ```
-docker pull jedimonkey/xeoma
+docker pull rob89m/xeoma-docker
 ```
 
 Build yourself
 ```
-git clone https://github.com/jedimonkey/xeoma-docker.git
+git clone https://github.com/rob89m/xeoma-docker.git
 docker build --rm -t <your-docker-name>/xeoma xeoma-docker
 ```
 
@@ -23,12 +23,12 @@ docker build --rm -t <your-docker-name>/xeoma xeoma-docker
 To run the container, fire up docker like so:
 
 ```
-$ sudo docker run -d --name="xeoma" --restart="always" --net=host -p 8090:8090 -v <local storage>:/usr/local/Xeoma -v /mnt/archive:/usr/local/Xeoma/XeomaArchive jedimonkey/xeoma
+$ sudo docker run -d --name="xeoma" --restart="always" --net=host -p 8090:8090 -v <local storage>:/usr/local/Xeoma -v /mnt/archive:/usr/local/Xeoma/XeomaArchive rob89m/xeoma-docker
 ```
 
 If you want to store your archive somewhere other than in your docker container add another volume:
 ```
-$ sudo docker run -d --name="xeoma" --restart="always" --net=host -p 8090:8090 -v <local storage>:/usr/local/Xeoma -v /mnt/archive:/usr/local/Xeoma/XeomaArchive jedimonkey/xeoma
+$ sudo docker run -d --name="xeoma" --restart="always" --net=host -p 8090:8090 -v <local storage>:/usr/local/Xeoma -v /mnt/archive:/usr/local/Xeoma/XeomaArchive rob89m/xeoma-docker
 ```
 
 #### Password
